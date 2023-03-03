@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost';
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:target {
+    scroll-margin-top: 200px;
+}
+
+body {
+    background-color: #2B2A2A;
+}
+
+header {
+    width: 100%;
+    background-color: #2B2A2A;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.btnlogin {
+    border-radius: 10px;
+    background-color: #00BD71;
+    padding: 10px 25px;
+    font-size: 1vw;
+}
+
+.btnlogin p,
+.btnloginmb p {
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.btnlogin:hover {
+    background-color: #039158;
+    transition: 0.2s;
+}
+
+.btnlogin {
+    display: none;
+}
+
+.btnloginmb {
+    border-radius: 10px;
+    background-color: #00BD71;
+    padding: 10px 0px;
+    font-size: 1vw;
+    width: 90%;
+}
+
+.btnloginmb:hover {
+    background-color: #039158;
+    transition: 0.2s;
+}
+
+.navbar {
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logoimg {
+    width: 45vw;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+li {
+    margin-right: 2.5rem;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.5vw;
+    color: #fff;
+    line-height: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sobre{
+    margin-top: 10rem;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+p{
+    color: white;
+    padding: 5%;
+    font-size: 2rem;
+}
+.faq-container{
+    margin-top: 300px;
+    margin-left: 10%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+max-width: 850px;
+    width: 80%;
+
+}
+
+.faq-titulo{
+    color: #00BD71;
+    font-size: 40px;
+    padding: 10px 0 5px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pergunta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #00BD71;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.pergunta h3{
+    font-size: 23px;
+    color: #00BD71;
+}
+.pergunta i{
+    transition: 0.5s;
+    font-size: 33px;
+    color: #00BD71;
+}
+
+.resposta{
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.ativar{
+  max-height: 300px;  
+  opacity: 1;
+}
+
+.fechar  i{
+    transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 730px) {
+    .navbar {
+        padding: 1.5rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu ul {
+        text-align: center;
+    }
+
+    .mobile-menu li a {
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+        background-color: transparent;
+        width: 5rem;
+    }
+
+    .icon {
+        background-color: transparent;
+        width: 2.5rem;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 730px){
+
+    li a {
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+        line-height: none;
+    }
+    
+    .logo img {
+        padding: 0.1rem;
+        width: 20rem;
+        z-index: 1;
+    }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Jost;
+        background: #2B2A2A;
+        height: 10rem;
+        z-index: 2;
+    }
+    
+    .nav-list {
+        list-style: none;
+        display: flex;
+    }
+    
+    .nav-list li {
+        margin-left: 3vw;
+    }
+    
+    .mobile-menu {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        margin: 8px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        align-items: center;
+    }
+}
